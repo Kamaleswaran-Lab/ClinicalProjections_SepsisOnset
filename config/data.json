@@ -1,0 +1,12 @@
+{"cross_val": false, 
+"smote": true, 
+"use_projected_data": true, 
+"data_path": "./data/", 
+"projected_datap_filename": "projected_physical_6_3.pkl", 
+"projected_datan_filename": "projected_normal_6_3.pkl", 
+"imputed_data_filename": "imputed_6_3.pkl", 
+"perform_clustering": false, 
+"num_clusters": 25, 
+"kmeans_obj": "model_10_25.pkl",
+"seed": 5512,
+"bootstrap": true}
