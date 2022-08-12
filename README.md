@@ -16,7 +16,9 @@ This project translates clinical constraints into high dimensional mathematical 
 2. Change the data paths in *get_imputations.py* to point to this folder
 3. Run:
 
-  $python get_imputations.py
+```bash
+  python get_imputations.py
+```
 
 ### Step 2: Projections onto Physical and Normal Clinical Constraints
 
@@ -25,15 +27,19 @@ This project translates clinical constraints into high dimensional mathematical 
 3. Set the right subpatient lengths in *get_projections.py*
 4. Run:
 
-  $python get_projections.py
-  
+```bash
+python get_projections.py
+```
+
 ### Step 3: Training Sepsis Prediction Models (with bootstrapping and cross-validation)
 
 1. Change the config file to point to your data and (optional) clustering objects, specify other parameters
 2. Run the python script with the path to the config file as cl argument
 
-  $python train_with_parser.py --<path_to_config>
-  
+```bash
+  python train_with_parser.py --<path_to_config>
+```
+
 ### TO DO:
 
 1. Create a single inference script that runs on any form of new data 
