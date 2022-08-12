@@ -37,7 +37,7 @@ python get_projections.py
 2. Run the python script with the path to the config file as cl argument
 
 ```bash
-  python train_with_parser.py --<path_to_config>
+python train_with_parser.py --<path_to_config>
 ```
 
 ### TO DO:
