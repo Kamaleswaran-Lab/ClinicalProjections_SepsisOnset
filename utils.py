@@ -8,7 +8,6 @@ import numpy as np
 import random
 import pandas as pd
 import pickle
-import os
 
 from imblearn.over_sampling import SMOTE 
 from imblearn.pipeline import Pipeline
@@ -117,10 +116,10 @@ def save_obj(object_var, folder, filename):
 def load_obj(folder, filename):
     
     if(filename[-3:] == 'pkl'):
-        with open(os.path.join(folder , filename),'rb') as f:
+        with open(folder + filename,'rb') as f:
             object_var = pickle.load(f)
     else:
-        with open(os.path.join(folder , filename + '.pkl'),'rb') as f:
+        with open(folder + filename + '.pkl','rb') as f:
             object_var = pickle.load(f)
         
     return object_var
